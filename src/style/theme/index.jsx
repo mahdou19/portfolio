@@ -16,5 +16,18 @@ const theme = createTheme({
       main: Colors.white,
     },
   },
+  components: {
+        MuiDrawer: {
+            styleOverrides: {
+              paper: {
+                width: 250,          
+                background: Colors.green,
+                borderRadius: '0px 100px 0px 0px',
+                borderRight: `1px solid ${Colors.white}`
+              }
+            }
+          },
+}
+  
 });
 export default theme;
