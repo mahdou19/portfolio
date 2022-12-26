@@ -2,6 +2,7 @@
 import { useEffect } from "react";
 import RoutePage from "./components/route/index.jsx";
 import { Container } from "@mui/material";
+import NavBar from "./components/common/navbar/NavBar.jsx";
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
   return (
    
      <Container> 
+        <NavBar />
         <RoutePage />
      </Container>
   
