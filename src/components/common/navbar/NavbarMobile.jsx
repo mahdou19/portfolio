@@ -11,9 +11,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 
-const MiddleDivider = styled((props) => (
-  <Divider variant="middle" {...props} />
-))``;
+
 
 const pages = ["HOME", "PROJETS", "EXPERIENCES"];
 

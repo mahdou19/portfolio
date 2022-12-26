@@ -1,9 +1,9 @@
-import NavBar from "../common/navbar/NavBar";
+import Welcome from "./welcome/Welcome.jsx";
 
 const MainPage = () => {
   return (
     <>
-      <NavBar />
+      <Welcome/>
     </>
   );
 };
