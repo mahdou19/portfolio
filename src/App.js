@@ -1,9 +1,21 @@
 
+import { useEffect } from "react";
+import RoutePage from "./components/route/index.jsx";
+import { Container } from "@mui/material";
+
 function App() {
+
+  useEffect(() => {
+    document.title = "Mamadou SALL";
+  }, []);
+
   return (
-    <div className="App">
-    
-    </div>
+   
+     <Container> 
+        <RoutePage />
+     </Container>
+  
+
   );
 }
 
