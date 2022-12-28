@@ -1,6 +1,8 @@
 import { useEffect } from "react";
-import NavBar from "./components/common/navbar/NavBar.jsx";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+
+import NavBar from "./components/common/navbar/NavBar.jsx";
 import MainPage from "./components/mainpage/MainPage.jsx";
 import Experiences from "./components/experiences/Experiences.jsx";
 import Projects from "./components/projects/Projects.jsx";

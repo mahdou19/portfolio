@@ -1,9 +1,10 @@
-import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
+
+import { Box, Typography, useTheme } from "@mui/material";
+
 import { useStyles } from "../../../style/skills/index.jsx";
+
 import { skills } from "../../../data/data.js";
-
-
 
 function Skills() {
   const theme = useTheme();
@@ -46,13 +47,12 @@ function Skills() {
                 gutterBottom
                 className={classes.skillTitle}
                 sx={{
-                    fontSize: "2em",
-                    mb: 0,
-                    fontFamily: "Bungee Inline",
+                  fontSize: "2em",
+                  mb: 0,
+                  fontFamily: "Bungee Inline",
                   [theme.breakpoints.down("sm")]: {
                     fontFamily: "Bangers",
                     fontSize: "2em",
-                    
                   },
                 }}
               >
@@ -63,7 +63,7 @@ function Skills() {
                 gutterBottom
                 className={classes.skillSubTitle}
                 sx={{
-                px: 10,
+                  px: 10,
                   fontWeight: 400,
                   fontSize: "1.5em",
                   [theme.breakpoints.down("sm")]: {

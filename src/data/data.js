@@ -1,3 +1,4 @@
+
 export const pages = [{title : "HOME", path: "/"},{title : "PROJETS", path: "/projects"},{title : "EXPERIENCES", path: "/experiences"}];
 
 

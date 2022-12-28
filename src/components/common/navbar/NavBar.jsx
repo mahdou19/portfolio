@@ -1,14 +1,21 @@
-import React, { Fragment, useState } from "react";
+import React, { Fragment } from "react";
+
+import { Button, Grid, useMediaQuery, useTheme } from "@mui/material";
+
+import { Stack } from "@mui/system";
+
+import { makeStyles } from "@material-ui/core";
+
 import AppBar from "@mui/material/AppBar";
 import Toolbar from "@mui/material/Toolbar";
 import CssBaseline from "@mui/material/CssBaseline";
-import { Button, Grid, useMediaQuery, useTheme } from "@mui/material";
+
+import { Link } from "react-router-dom";
+
 import { Colors } from "../../../style/theme/index.jsx";
 import NavBarMobile from "./NavbarMobile.jsx";
-import { Stack } from "@mui/system";
 import MyAvatar from "../avatar/Avatar.jsx";
-import { Link, useLocation } from "react-router-dom";
-import { makeStyles } from "@material-ui/core";
+
 import { pages } from "../../../data/data.js";
 
 const useStyles = makeStyles((theme) => ({
@@ -20,13 +27,8 @@ const useStyles = makeStyles((theme) => ({
 export default function NavBar() {
   const classes = useStyles();
   const theme = useTheme();
-  const { pathname } = useLocation();
-
-  const [active, setActive] = useState("");
 
   const matches = useMediaQuery(theme.breakpoints.down("md"));
-
-  
 
   return (
     <Fragment>
@@ -55,7 +57,6 @@ export default function NavBar() {
                     </Link>
                   ))}
                 </Stack>
-
               </Grid>
             </>
           )}
