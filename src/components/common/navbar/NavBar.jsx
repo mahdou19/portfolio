@@ -14,6 +14,8 @@ import {
 import { Colors } from "../../../style/theme/index.jsx";
 import NavBarMobile from "./NavbarMobile.jsx";
 import { Stack } from "@mui/system";
+import MyAvatar from "../avatar/Avatar.jsx";
+
 
 const pages = [{title : "HOME", path: "/"},{title : "PROJETS", path: "/projects"},{title : "EXPERIENCES", path: "/experiences"}];
 export default function NavBar() {
@@ -31,6 +33,7 @@ export default function NavBar() {
       <CssBaseline />
       <AppBar sx={{ bgcolor: Colors.green }}>
         <Toolbar>
+        <MyAvatar />
           {matches ? (
             <>
               <NavBarMobile />
@@ -43,6 +46,7 @@ export default function NavBar() {
                 justifyContent="center"
                 alignItems="center"
               >
+               
                 <Stack spacing={2} direction="row">
                   {pages.map((page, index) => (
                      
@@ -60,7 +64,9 @@ export default function NavBar() {
                
               </Grid>
             </>
+            
           )}
+          
         </Toolbar>
       </AppBar>
       <Toolbar />
