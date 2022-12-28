@@ -17,10 +17,20 @@ export const useStyles = makeStyles((theme) =>({
         height: "auto",
         display: "flex",
         flexFlow: "column wrap",
-        color: Colors.green ,
+        color: Colors.green,
+      
+    },
+    headerTitle: {
+        textAlign: "center",
+        textDecoration: "underline"
+        
+       
     },
     skillTitle: {
-        fontSize: "5em",
-        textAlign: "center",
+        paddingLeft: "1em",
+    },
+    skillSubTitle: {
+        paddingLeft: "1em",
+        color: Colors.black,
     }
 }))
