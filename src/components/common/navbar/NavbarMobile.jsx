@@ -1,21 +1,29 @@
 import React, { Fragment, useState } from "react";
 import {
-  Divider,
   Drawer,
   IconButton,
   List,
   ListItemButton,
   ListItemIcon,
   ListItemText,
-  styled,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
+import { makeStyles } from "@material-ui/core";
 
+import { Link } from "react-router-dom";
 
+import { Colors } from "../../../style/theme/index.jsx";
 
-const pages = ["HOME", "PROJETS", "EXPERIENCES"];
+import { pages } from "../../../data/data.js";
 
+const useStyles = makeStyles((theme) => ({
+  link: {
+    textDecoration: "none",
+    color: Colors.white,
+  },
+}));
 export default function NavBarMobile() {
+  const classes = useStyles();
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
@@ -25,13 +33,14 @@ export default function NavBarMobile() {
         open={openDrawer}
         onClose={() => setOpenDrawer(false)}
       >
-        <List  sx={{ marginTop: "18px"}}>
+        <List sx={{ marginTop: "20px" }}>
           {pages.map((page, index) => (
             <ListItemButton key={index}>
-              <ListItemIcon>
-                <ListItemText sx={{color: "white"}}>
-                  {page}
-                  <Divider sx={{ width: "180px" , m: 1}} />
+              <ListItemIcon onClick={() => setOpenDrawer(false)}>
+                <ListItemText sx={{ color: "white", mb: "10px" }}>
+                  <Link to={page.path} className={classes.link}>
+                    {page.title}
+                  </Link>
                 </ListItemText>
               </ListItemIcon>
             </ListItemButton>
