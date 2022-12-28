@@ -18,6 +18,8 @@ export const useStyles = makeStyles((theme) =>({
         display: "flex",
         flexFlow: "column wrap",
         color: Colors.green,
+        textAlign: "center",
+        
       
     },
     headerTitle: {
@@ -26,11 +28,10 @@ export const useStyles = makeStyles((theme) =>({
         
        
     },
-    skillTitle: {
-        paddingLeft: "1em",
-    },
+    
     skillSubTitle: {
-        paddingLeft: "1em",
+   
         color: Colors.black,
+       
     }
 }))
