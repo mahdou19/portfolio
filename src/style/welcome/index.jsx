@@ -5,6 +5,7 @@ import background from '../../assets/images/image2.jpg'
 
 export const useStyles = makeStyles((theme) => ({
     welcomeContainer: {
+        margin: 0,
         width: "100%",
         minHeight: "90vh",
         height: "auto",
@@ -20,6 +21,7 @@ export const useStyles = makeStyles((theme) => ({
         display: "flex",
         flexFlow: "column wrap",
         justifyContent: "center",
+        alignItems: "center",
         color: Colors.white ,
         [theme.breakpoints.down('xs')]: {
             padding: "35px",
@@ -35,6 +37,11 @@ export const useStyles = makeStyles((theme) => ({
     welcomeDescription: {
         fontSize: "5em",
         textAlign: "center",
-       
+        paddingLeft:"10em",
+        paddingRight: "10em",
+        [theme.breakpoints.down('md')]: {
+            padding: "10px",
+          },
+ 
     }
 }))
