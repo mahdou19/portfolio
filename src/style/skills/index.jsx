@@ -5,7 +5,7 @@ import { Colors } from "../theme/index.jsx";
 
 export const useStyles = makeStyles((theme) =>({
     skillContainer : {
-        margin: 0,
+        marginTop: "20px",
         padding: 0,
         width : "100%",
         height: "auto",

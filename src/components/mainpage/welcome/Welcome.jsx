@@ -3,17 +3,10 @@ import { useStyles } from "../../../style/welcome/index.jsx";
 import { Box, Typography, useTheme } from "@mui/material";
 import ButtonDownload from "../../common/button/ButtonDownload.jsx";
 
-import { useTypewriter } from 'react-simple-typewriter'
 import { Typewriter } from 'react-simple-typewriter'
 
 function Welcome() {
   
-
-  const [text] = useTypewriter({
-    words: ['Developpeur', 'From', 'Typewriter', 'Hook!'],
-    loop: 3,
-    onLoopDone: () => console.log(`loop completed after 3 runs.`)
-  })
   const theme = useTheme()
   const classes = useStyles();
 

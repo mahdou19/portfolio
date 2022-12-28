@@ -30,12 +30,12 @@ export const useStyles = makeStyles((theme) => ({
         
     },
     welcomeTitle : {
-        fontSize: "5em",
+        
         textAlign: "center",
        
     },
     welcomeDescription: {
-        fontSize: "5em",
+      
         textAlign: "center",
         paddingLeft:"10em",
         paddingRight: "10em",

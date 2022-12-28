@@ -1,19 +1,15 @@
 import { Box, Typography, useTheme } from "@mui/material";
 import React from "react";
 import { useStyles } from "../../../style/skills/index.jsx";
-import { type } from "@testing-library/user-event/dist/type/index.js";
+import { skills } from "../../../data/data.js";
 
-const skills = [
-  { title: "Front-End", skill: ["React JS", "HTML", "CSS", "MaterialUI", "NPM"] },
-  { title: "Back-End", skill: ["NodeJS", "NestJS", "ExpressJS", "MongoDB", "MySQL", "AWS"] },
-  { title: "Langage", skill: ["JavaScript", "Python", "TypeScript"] },
-];
+
 
 function Skills() {
   const theme = useTheme();
   const classes = useStyles();
   return (
-    <Box className={classes.skillContainer} sx={{ mt: 4 }}>
+    <Box className={classes.skillContainer}>
       <Box
         className={classes.skillHeader}
         sx={{
