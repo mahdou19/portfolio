@@ -3,10 +3,21 @@ import { useStyles } from "../../../style/welcome/index.jsx";
 import { Box, Typography, useTheme } from "@mui/material";
 import ButtonDownload from "../../common/button/ButtonDownload.jsx";
 
-function Welcome() {
+import { useTypewriter } from 'react-simple-typewriter'
+import { Typewriter } from 'react-simple-typewriter'
 
+function Welcome() {
+  
+
+  const [text] = useTypewriter({
+    words: ['Developpeur', 'From', 'Typewriter', 'Hook!'],
+    loop: 3,
+    onLoopDone: () => console.log(`loop completed after 3 runs.`)
+  })
   const theme = useTheme()
   const classes = useStyles();
+
+  
   return (
     <Box className={classes.welcomeContainer}>
       <Box className={classes.welcomeHeader}>
@@ -15,7 +26,17 @@ function Welcome() {
             fontWeight: 400,
             
           },}}>
-          Developpeur Web FullStack
+           
+           <Typewriter
+            words={['Developer Web Full Stack']}
+            loop={10}
+           
+           
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={5000}
+          
+          />
         </Typography>
         <Typography variant="h6" className={classes.welcomeDescription} >
           Je m'appelle Mamadou SALL , j’ai 26 ans et je suis Développeur Web Full Stack. Je suis alternant en Master I à l'école ESTIAM de Paris en WMD (Web & Mobile Development) et chez 42 Consulting depuis Octobre 2021, j'ai une solide formation en informatique et une expérience professionnelle en développement Web.J'ai travaillé sur de nombreux projets, en utilisant différents langages de programmation et technologies.
