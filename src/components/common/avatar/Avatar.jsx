@@ -1,7 +1,7 @@
 import { Avatar } from "@mui/material";
 import React from "react";
 
-import avatar from "../../../assets/images/image3.jpg";
+import avatar from "../../../assets/images/avatar1.png";
 import { useTheme } from "@emotion/react";
 
 function MyAvatar() {
