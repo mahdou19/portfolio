@@ -1,8 +1,11 @@
 import React from 'react'
+import CardProject from './CardProject.jsx'
 
 function Projects() {
   return (
-    <div>Projects</div>
+    <>
+      <CardProject/>
+    </>
   )
 }
 
