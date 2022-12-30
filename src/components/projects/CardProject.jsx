@@ -4,14 +4,18 @@ import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
-import { Button, CardActionArea, CardActions } from '@mui/material';
+import { Button, CardActionArea, CardActions, Grid } from '@mui/material';
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 function CardProject() {
   const theme = useTheme();
   return (
-    <box>
-        <Card sx={{ maxWidth: 345 }}>
+    <Grid sx={{ flexGrow: 1, m:0 }} container spacing={2} >
+     <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 3, sm: 8, md: 12 }}  alignItems="center" direction="row"
+  justifyContent="center">
+      {[0, 1, 2].map((value) => (
+         <Grid item xs={2} sm={4} md={4} >
+        <Card sx={{ maxWidth: 345, textAlign: "center"}}>
       <CardActionArea>
         <CardMedia
           component="img"
@@ -39,7 +43,10 @@ function CardProject() {
         />
       </CardActions>
     </Card>
-    </box>
+    </Grid>
+     ))}
+    </Grid>
+    </Grid>
   )
 }
 
