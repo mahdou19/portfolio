@@ -38,7 +38,7 @@ function Footer() {
         />
       </Box>
       <Box sx={{textAlign: "center"}} >
-          <Typography sx={{color: Colors.white, pb: 2}}> Réaliser par Mamadou SALL - © 2023 </Typography>
+          <Typography sx={{color: Colors.white, pb: 2}}> Réaliser par Mamadou SALL🔥 - © 2023 </Typography>
       </Box>
     </Box>
   );
