@@ -1,14 +1,14 @@
 import React from "react";
 
-import { Box, Typography, useTheme } from "@mui/material";
+import { Box, useTheme } from "@mui/material";
 
 import ExperienceTimeline from "./ExperienceTimeline.jsx";
-import { useStyles } from "../../style/skills/index.jsx";
+
 import Footer from "../common/footer/Footer.jsx";
+import Title from "../common/title/Title.jsx";
 
 function Experiences() {
   const theme = useTheme();
-  const classes = useStyles();
   return (
     <Box
       sx={{
@@ -17,37 +17,8 @@ function Experiences() {
         },
       }}
     >
-      <Box
-        className={classes.skillHeader}
-        sx={{
-          mt: 2,
-          [theme.breakpoints.down("sm")]: {
-            fontFamily: "Bangers",
-            fontSize: "1em",
-            justifyContent: "center",
-            alignItems: "center",
-          },
-        }}
-      >
-        <Typography
-          variant="h2"
-          gutterBottom
-          className={classes.headerTitle}
-          sx={{
-            my: 3,
-            fontWeight: 400,
-            fontSize: "2.5em",
-            fontFamily: "Bungee Inline",
-            [theme.breakpoints.down("sm")]: {
-              fontFamily: "Bangers",
-              fontWeight: 400,
-            },
-          }}
-        >
-          EXPERIENCES
-        </Typography>
-      </Box>
-      <Box sx={{ mb: 5 , minHeight: "55vh", height: "auto"}}>
+      <Title title={"EXPERIENCES"} theme={theme} />
+      <Box sx={{ mb: 5, minHeight: "55vh", height: "auto" }}>
         <ExperienceTimeline />
       </Box>
       <Footer />

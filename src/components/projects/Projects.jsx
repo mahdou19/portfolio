@@ -1,54 +1,38 @@
 import React from "react";
-import CardProject from "./CardProject.jsx";
+
+import { Box } from "@mui/material";
+
 import { Container } from "@mui/system";
-import { Box, Typography, useTheme } from "@mui/material";
+
+import { useTheme } from "@material-ui/core";
+
 import { useStyles } from "../../style/skills/index.jsx";
 import Footer from "../common/footer/Footer.jsx";
+import Title from "../common/title/Title.jsx";
+import CardProject from "./CardProject.jsx";
+
+import { projects, schoolProject } from "../../data/data.js";
 
 function Projects() {
-  const classes = useStyles();
   const theme = useTheme();
+
   return (
     <>
       <Container sx={{ p: 0 }}>
+        <Title title={"Project"} theme={theme} />
         <Box
-          className={classes.skillHeader}
           sx={{
-            mt: 2,
+            mb: 5,
+            minHeight: "57vh",
             [theme.breakpoints.down("sm")]: {
-              fontFamily: "Bangers",
-              fontSize: "1em",
-              justifyContent: "center",
-              alignItems: "center",
+              px: 0,
             },
           }}
         >
-          <Typography
-            variant="h2"
-            gutterBottom
-            className={classes.headerTitle}
-            sx={{
-              my: 3,
-              fontWeight: 400,
-              fontSize: "2.5em",
-              fontFamily: "Bungee Inline",
-              [theme.breakpoints.down("sm")]: {
-                fontFamily: "Bangers",
-                fontWeight: 400,
-              },
-            }}
-          >
-            PROJETS
-          </Typography>
+          <CardProject projects={projects} />
         </Box>
-        <Box sx={{ mb: 5,
-        minHeight: "57vh",
-        [theme.breakpoints.down("sm")]: {
-          px: 0,
-        },
-      }}>
-          <CardProject />
-        </Box>
+        <Title title={"Project Ecole"} theme={theme} />
+        <CardProject projects={schoolProject} />
       </Container>
       <Footer />
     </>
