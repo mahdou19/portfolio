@@ -8,9 +8,12 @@ export const useStyles = makeStyles((theme) => ({
     padding: 0,
     width: "100%",
     height: "auto",
-    minHeight: "70vh",
+    minHeight: "55vh",
     background: Colors.white,
-    marginBottom: "20px",
+    [theme.breakpoints.down("sm")]:{
+      marginBottom: "30px",
+    }
+  
   },
   skillHeader: {
     width: "100%",
