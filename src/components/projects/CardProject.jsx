@@ -12,10 +12,20 @@ function CardProject() {
   return (
     <Grid sx={{ flexGrow: 1, m:0 }} container spacing={2} >
      <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 3, sm: 8, md: 12 }}  alignItems="center" direction="row"
-  justifyContent="center">
+  justifyContent="center" sx={{  [theme.breakpoints.down("md")]: {
+    mx:5, p:0
+  }, [theme.breakpoints.down("sm")]: {
+    mx:0, p:0
+  }}}>
       {[0, 1, 2].map((value) => (
-         <Grid item xs={2} sm={4} md={4} >
-        <Card sx={{ maxWidth: 345, textAlign: "center"}}>
+         <Grid item xs={2} sm={4} md={4} sx={{  [theme.breakpoints.down("md")]: {
+          m:0, p:0
+        }, [theme.breakpoints.down("sm")]: {
+          m:0, p:0
+        }}}>
+        <Card sx={{ maxWidth: 345, textAlign: "center", [theme.breakpoints.down("md")]: {
+    width: "100%"
+  }}} >
       <CardActionArea>
         <CardMedia
           component="img"
