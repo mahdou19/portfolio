@@ -34,7 +34,7 @@ function Experiences() {
           gutterBottom
           className={classes.headerTitle}
           sx={{
-            mb: 3,
+            my: 3,
             fontWeight: 400,
             fontSize: "2.5em",
             fontFamily: "Bungee Inline",
@@ -47,7 +47,7 @@ function Experiences() {
           EXPERIENCES
         </Typography>
       </Box>
-      <Box sx={{ mb: 5 }}>
+      <Box sx={{ mb: 5 , minHeight: "55vh", height: "auto"}}>
         <ExperienceTimeline />
       </Box>
       <Footer />

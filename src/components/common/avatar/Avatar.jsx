@@ -1,8 +1,6 @@
 
 import React from "react";
 
-import { Link } from "react-router-dom";
-
 import { Avatar } from "@mui/material";
 import { useTheme } from "@emotion/react";
 
@@ -12,7 +10,6 @@ function MyAvatar() {
   const theme = useTheme();
   return (
     <>
-    <Link to="/">
       <Avatar
         alt="Remy Sharp"
         src={avatar}
@@ -25,7 +22,6 @@ function MyAvatar() {
           },
         }}
       />
-      </Link>
     </>
   );
 }
