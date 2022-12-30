@@ -36,7 +36,7 @@ function Projects() {
             },
           }}
         >
-          EXPERIENCES
+          PROJETS
         </Typography>
       </Box>
       <Box >
