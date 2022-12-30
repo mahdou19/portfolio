@@ -6,11 +6,10 @@ export const useStyles = makeStyles((theme) => ({
   footerContainer: {
     margin: 0,
     width: "100%",
-    height: "auto",
-    minHeight: "30vh",
+   
     background: Colors.footer,
     [theme.breakpoints.down("sm")]: {
-      minHeight: "25vh",
+      minHeight: "15vh",
     },
   },
   footerLine: {
@@ -18,11 +17,11 @@ export const useStyles = makeStyles((theme) => ({
     margin: 0,
     width: "100%",
     height: "auto",
-    minHeight: "30vh",
+    minHeight: "15vh",
     justifyContent: "center",
     alignItems: "center",
     [theme.breakpoints.down("sm")]: {
-      minHeight: "25vh",
+      minHeight: "15vh",
     },
   },
   iconFooter: {

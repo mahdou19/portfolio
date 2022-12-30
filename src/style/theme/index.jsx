@@ -16,6 +16,9 @@ const theme = createTheme({
     secondary: {
       main: Colors.white,
     },
+    icon: {
+      main: Colors.green,
+    },
   },
   components: {
     MuiDrawer: {
