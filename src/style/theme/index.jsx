@@ -20,6 +20,13 @@ const theme = createTheme({
       main: Colors.green,
     },
   },
+  overrides: {
+    MuiGrid: {
+      item: {
+        paddingLeft: 0,
+      },
+    },
+  },
   components: {
     MuiDrawer: {
       styleOverrides: {

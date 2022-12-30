@@ -12,7 +12,8 @@ export const useStyles = makeStyles((theme) => ({
     background: Colors.white,
     [theme.breakpoints.down("sm")]:{
       marginBottom: "30px",
-    }
+    },
+   
   
   },
   skillHeader: {
@@ -22,10 +23,12 @@ export const useStyles = makeStyles((theme) => ({
     flexFlow: "column wrap",
     color: Colors.green,
     textAlign: "center",
+    marginTop: "50px"
   },
   headerTitle: {
     textAlign: "center",
     textDecoration: "underline",
+    
   },
 
   skillSubTitle: {
