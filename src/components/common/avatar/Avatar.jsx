@@ -10,7 +10,6 @@ function MyAvatar() {
   const theme = useTheme();
   return (
     <>
-    <Link to="/">
       <Avatar
         alt="Remy Sharp"
         src={avatar}
@@ -23,7 +22,6 @@ function MyAvatar() {
           },
         }}
       />
-      </Link>
     </>
   );
 }
