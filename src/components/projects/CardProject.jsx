@@ -8,6 +8,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
+import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import { Colors } from "../../style/theme/index.jsx";
 
@@ -59,12 +60,17 @@ function CardProject({ projects }) {
                 </CardContent>
               </CardActionArea>
               <CardActions sx={{ justifyContent: "center" }}>
+                {}
+                <Typography variant="body2" color="text.secondary">
+                  Github
+                </Typography>
                 <GitHubIcon
                   onClick={() => {
                     window.location.href = project.link;
                   }}
                   sx={{
-                    fontSize: 40,
+                    fontSize: 25,
+                    mr: 2,
                     cursor: "pointer",
                     "&:hover": {
                       backgroundColor: Colors.white,
@@ -72,6 +78,28 @@ function CardProject({ projects }) {
                     },
                   }}
                 />
+                {project.linkWeb ? (
+                  <>
+                    <Typography variant="body2" color="text.secondary">
+                      Website
+                    </Typography>
+                    <OpenInNewIcon
+                      onClick={() => {
+                        window.location.href = project.linkWeb;
+                      }}
+                      sx={{
+                        fontSize: 25,
+                        cursor: "pointer",
+                        "&:hover": {
+                          backgroundColor: Colors.white,
+                          color: Colors.green,
+                        },
+                      }}
+                    />
+                  </>
+                ) : (
+                  ""
+                )}
               </CardActions>
             </Card>
           </Grid>

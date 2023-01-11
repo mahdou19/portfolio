@@ -6,7 +6,6 @@ import { Container } from "@mui/system";
 
 import { useTheme } from "@material-ui/core";
 
-import { useStyles } from "../../style/skills/index.jsx";
 import Footer from "../common/footer/Footer.jsx";
 import Title from "../common/title/Title.jsx";
 import CardProject from "./CardProject.jsx";

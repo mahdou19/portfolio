@@ -11,6 +11,8 @@ import { Colors } from "../../../style/theme/index.jsx";
 
 function Footer() {
   const classes = useStyles();
+  const year = new Date().getFullYear()
+
 
   return (
     <Box className={classes.footerContainer}>
@@ -38,7 +40,7 @@ function Footer() {
         />
       </Box>
       <Box sx={{textAlign: "center"}} >
-          <Typography sx={{color: Colors.white, pb: 2}}>  © 2023 - Mamadou SALL </Typography>
+          <Typography sx={{color: Colors.white, pb: 2}}>  © {year} - Mamadou SALL </Typography>
       </Box>
     </Box>
   );
