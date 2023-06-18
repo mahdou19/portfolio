@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Alert, Box, Divider, Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -11,8 +11,7 @@ import { Colors } from "../../../style/theme/index.jsx";
 
 function Footer() {
   const classes = useStyles();
-  const year = new Date().getFullYear()
-
+  const year = new Date().getFullYear();
 
   return (
     <Box className={classes.footerContainer}>
@@ -39,8 +38,11 @@ function Footer() {
           sx={{ fontSize: 40 }}
         />
       </Box>
-      <Box sx={{textAlign: "center"}} >
-          <Typography sx={{color: Colors.white, pb: 2}}>  © {year} - Mamadou SALL </Typography>
+      <Box sx={{ textAlign: "center" }}>
+        <Typography sx={{ color: Colors.white, pb: 2 }}>
+          {" "}
+          © {year} - Mamadou SALL{" "}
+        </Typography>
       </Box>
     </Box>
   );
