@@ -21,8 +21,8 @@ function Projects() {
         <Title title={"Project"} theme={theme} />
         <Box
           sx={{
-            mb: 5,
-            minHeight: "57vh",
+            mb: 1,
+            minHeight: "40vh",
             [theme.breakpoints.down("sm")]: {
               px: 0,
             },
