@@ -78,14 +78,14 @@ function CardProject({ projects }) {
                     },
                   }}
                 />
-                {project.linkWeb ? (
+                {project.link ? (
                   <>
                     <Typography variant="body2" color="text.secondary">
                       Website
                     </Typography>
                     <OpenInNewIcon
                       onClick={() => {
-                        window.location.href = project.linkWeb;
+                        window.location.href = project.link;
                       }}
                       sx={{
                         fontSize: 25,

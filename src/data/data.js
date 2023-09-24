@@ -21,7 +21,7 @@ export const projects = [
     id: 1,
     title: "Mon portfolio",
     desc: `Site web personnel pour présenter mes projets et mon parcours.`,
-    link: "https://github.com/mahdou19/portfolio",
+    link: "https://mahdou19.github.io/myportfolio",
     image:
       "https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
   },
@@ -29,7 +29,7 @@ export const projects = [
     id: 2,
     title: "Génie Civil Website",
     desc: `Site web pour une entreprise de génie civil. Le site est en cours de développement.`,
-    link: "https://github.com/",
+    link: "https://github.com/mahdou19",
     image:
       "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80",
   },
@@ -37,8 +37,7 @@ export const projects = [
     id: 3,
     title: "Générateur de citation",
     desc: `Générateur de citation en utilisant une API.`,
-    link: "https://github.com/mahdou19/generate-quote",
-    linkWeb: "https://generator-quote-motivation.netlify.app",
+    link: "https://generator-quote-motivation.netlify.app",
     image:
       "https://images.unsplash.com/photo-1537444532052-2afbf769b76c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
   },
