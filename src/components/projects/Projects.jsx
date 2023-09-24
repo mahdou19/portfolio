@@ -22,7 +22,7 @@ function Projects() {
         <Box
           sx={{
             mb: 1,
-            minHeight: "40vh",
+            minHeight: "60vh",
             [theme.breakpoints.down("sm")]: {
               px: 0,
             },
@@ -30,8 +30,8 @@ function Projects() {
         >
           <CardProject projects={projects} />
         </Box>
-        <Title title={"Project Ecole"} theme={theme} />
-        <CardProject projects={schoolProject} />
+        {/* <Title title={"Project Ecole"} theme={theme} />
+        <CardProject projects={schoolProject} /> */}
       </Container>
       <Footer />
     </>
