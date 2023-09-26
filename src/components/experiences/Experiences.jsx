@@ -14,14 +14,13 @@ function Experiences() {
   return (
     <Box
       sx={{
-        py: 8,
         [theme.breakpoints.down("sm")]: {
           px: 0,
         },
       }}
     >
       <Title title={"EXPERIENCES"} theme={theme} />
-      <Box sx={{ mb: 5, minHeight: "55vh", height: "auto" }}>
+      <Box sx={{ minHeight: "55vh", height: "auto" }}>
         <ExperienceTimeline />
       </Box>
       {currentPath === "/experiences" && <Footer />}

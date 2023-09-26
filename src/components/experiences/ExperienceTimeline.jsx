@@ -30,6 +30,44 @@ function ExperienceTimeline() {
       <TimelineItem>
         <TimelineOppositeContent
           sx={{ m: "auto 0" }}
+          variant="body2"
+          color="text.secondary"
+        >
+          Oct 2023 - Sept 2024
+        </TimelineOppositeContent>
+        <TimelineSeparator>
+          <TimelineConnector
+            sx={{ background: Colors.green, color: Colors.white }}
+          />
+          <TimelineDot
+            color="primary"
+            sx={{ background: Colors.green, color: Colors.white }}
+          >
+            <SchoolIcon />
+          </TimelineDot>
+          <TimelineConnector
+            sx={{ background: Colors.green, color: Colors.white }}
+          />
+        </TimelineSeparator>
+        <TimelineContent sx={{ py: "12px", px: 2 }}>
+          <Typography
+            variant="h6"
+            component="span"
+            sx={{
+              [theme.breakpoints.down("sm")]: {
+                fontSize: "15px",
+                fontWeight: "bold",
+              },
+            }}
+          >
+            ESTIAM PARIS
+          </Typography>
+          <Typography>Master II - WMD</Typography>
+        </TimelineContent>
+      </TimelineItem>
+      <TimelineItem>
+        <TimelineOppositeContent
+          sx={{ m: "auto 0" }}
           align="right"
           variant="body2"
           color="text.secondary"

@@ -27,7 +27,7 @@ function Skills() {
           gutterBottom
           className={classes.headerTitle}
           sx={{
-            mb: 5,
+            mb: 3,
             fontWeight: 400,
             fontSize: "2.5em",
             fontFamily: "Bungee Inline",

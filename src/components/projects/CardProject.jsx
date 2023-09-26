@@ -11,6 +11,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 
 import { Colors } from "../../style/theme/index.jsx";
+import ChipsArray from "./ChipsArray.jsx";
 
 function CardProject({ projects }) {
   const theme = useTheme();
@@ -59,6 +60,7 @@ function CardProject({ projects }) {
                   </Typography>
                 </CardContent>
               </CardActionArea>
+              <ChipsArray data={project.langage} />
               <CardActions sx={{ justifyContent: "center" }}>
                 {}
                 <Typography variant="body2" color="text.secondary">
@@ -66,7 +68,7 @@ function CardProject({ projects }) {
                 </Typography>
                 <GitHubIcon
                   onClick={() => {
-                    window.location.href = project.link;
+                    window.location.href = project.github;
                   }}
                   sx={{
                     fontSize: 25,

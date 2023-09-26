@@ -10,9 +10,10 @@ import Footer from "../common/footer/Footer.jsx";
 import Title from "../common/title/Title.jsx";
 import CardProject from "./CardProject.jsx";
 
-import { projects, schoolProject } from "../../data/data.js";
+import { projects } from "../../data/data.js";
 
 function Projects() {
+  const currentPath = window.location.pathname;
   const theme = useTheme();
 
   return (
@@ -33,7 +34,7 @@ function Projects() {
         {/* <Title title={"Project Ecole"} theme={theme} />
         <CardProject projects={schoolProject} /> */}
       </Container>
-      <Footer />
+      {currentPath === "/projects" && <Footer />}
     </>
   );
 }

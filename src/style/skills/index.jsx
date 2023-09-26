@@ -7,14 +7,11 @@ export const useStyles = makeStyles((theme) => ({
     marginTop: "20px",
     padding: 0,
     width: "100%",
-    height: "auto",
-    minHeight: "55vh",
+    marginBottom: "50px",
     background: Colors.white,
-    [theme.breakpoints.down("sm")]:{
+    [theme.breakpoints.down("sm")]: {
       marginBottom: "30px",
     },
-   
-  
   },
   skillHeader: {
     width: "100%",
@@ -23,12 +20,11 @@ export const useStyles = makeStyles((theme) => ({
     flexFlow: "column wrap",
     color: Colors.green,
     textAlign: "center",
-    marginTop: "50px"
+    marginTop: "50px",
   },
   headerTitle: {
     textAlign: "center",
     textDecoration: "underline",
-    
   },
 
   skillSubTitle: {
