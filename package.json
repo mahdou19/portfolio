@@ -8,7 +8,7 @@
     "@emotion/styled": "^11.10.5",
     "@material-ui/core": "^4.12.4",
     "@mui/icons-material": "^5.11.0",
-    "@mui/lab": "^5.0.0-alpha.114", 
+    "@mui/lab": "^5.0.0-alpha.114",
     "@mui/material": "^5.11.1",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -47,6 +47,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "gh-pages": "^5.0.0"
   }
 }

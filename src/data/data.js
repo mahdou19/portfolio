@@ -2,6 +2,7 @@ export const pages = [
   { title: "HOME", path: "/myportfolio" },
   { title: "PROJETS", path: "/projects" },
   { title: "EXPERIENCES", path: "/experiences" },
+  { title: "BLOG", path: "/blog" },
 ];
 
 export const skills = [
@@ -11,9 +12,21 @@ export const skills = [
   },
   {
     title: "Back-End",
-    skill: ["NodeJS", "NestJS", "ExpressJS", "MongoDB", "AWS"],
+    skill: ["NodeJS", "NestJS", "ExpressJS", "MongoDB", "AWS", "CDK"],
   },
   { title: "Langage", skill: ["JavaScript", "Python", "TypeScript"] },
+  {
+    title: "Devops",
+    skill: [
+      "Docker",
+      "Vagrant",
+      "Ansible",
+      "CloudFormation",
+      "Jira",
+      "Confluence",
+      "Kubernetes",
+    ],
+  },
 ];
 
 export const projects = [
