@@ -43,6 +43,7 @@ export const projects = [
     image:
       "https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
   },
+
   {
     id: 2,
     title: "Génie Civil Website",
@@ -95,6 +96,22 @@ export const projects = [
     github: "https://github.com/mahdou19/Projet-Estiam-Plaquette",
     image:
       "https://images.unsplash.com/photo-1618477388954-7852f32655ec?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=764&q=80",
+  },
+  {
+    id: 6,
+    title: "Automatisation CloudOps",
+    desc: `Déploiement automatisé d'une application Node.js sur AWS EC2 avec AWS CDK, Ansible, Docker et GitHub Actions.`,
+    langage: [
+      { key: 0, label: "Node.js" },
+      { key: 1, label: "Docker" },
+      { key: 2, label: "AWS CDK" },
+      { key: 3, label: "Ansible" },
+      { key: 4, label: "GitHub Actions" },
+    ],
+    link: "https://github.com/mahdou19/cdk-node-app",
+    github: "https://github.com/mahdou19/cdk-node-app",
+    image:
+      "https://img.freepik.com/vecteurs-libre/concept-design-plat-ingenieur-devops-grand-symbole-infini-au-centre-petites-icones-illustration-vectorielle-employes-activite_1284-74955.jpg?w=1060&t=st=1703474048~exp=1703474648~hmac=408d9291557aaa380797a1149c6e8a6966fa029972f2b433b8499ffe4be73d7c",
   },
 ];
 // export const schoolProject = [
